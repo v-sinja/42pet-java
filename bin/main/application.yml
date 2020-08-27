@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:33060/42Pet?autoReconnect=true&useSSL=false
+    username: default
+    password: secret
+
+mybatis:
+  type-aliases-package: com.pet.vsinja
+  mapper-locations: mybatis/mapper/**/*.xml
