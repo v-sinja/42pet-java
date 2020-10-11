@@ -8,5 +8,7 @@ import com.pet.vsinja.domain.UserDomain;
 @Mapper
 @Repository
 public interface UserMapper {
-    public UserDomain GetUser(long seq) throws Exception;
+    public UserDomain GetUser(String id, String password) throws Exception;
+
+    public UserDomain FindByEmail(String id);
 }
